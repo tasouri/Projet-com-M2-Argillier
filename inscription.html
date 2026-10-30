@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscriptions - Challenge Fédéral</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rejoindre l'Aventure</h1>
+        <h2>Formulaire d'inscription</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Présentation</a></li>
+                <li><a href="description.html">L'Événement</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="infos.html">Infos Pratiques</a></li>
+                <li><a href="inscription.html" class="active">Inscriptions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="section-title">Inscrire votre équipe</h2>
+        <p style="text-align: center; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+            Le Soft Volley prône l'inclusion et la convivialité. <strong>La constitution d'équipes mixtes et intergénérationnelles est fortement encouragée !</strong>
+        </p>
+        
+        <form class="card" action="#" method="POST">
+            <div class="form-group">
+                <label for="nom_equipe">Nom de l'équipe :</label>
+                <input type="text" id="nom_equipe" name="nom_equipe" placeholder="Ex: Les As de Sélestat" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email_contact">Email du contact principal :</label>
+                <input type="email" id="email_contact" name="email_contact" placeholder="votre.email@exemple.com" required>
+            </div>
+
+            <div class="grid-2" style="margin-bottom: 0;">
+                <div class="form-group">
+                    <label for="nb_joueurs">Effectif total (Joueurs & Joueuses) :</label>
+                    <input type="number" id="nb_joueurs" name="nb_joueurs" min="4" max="10" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="composition">Composition de l'équipe :</label>
+                    <select id="composition" name="composition">
+                        <option value="mixte">Mixte & Intergénérationnelle (Recommandé)</option>
+                        <option value="feminine">100% Féminine</option>
+                        <option value="masculine">100% Masculine</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="club">Club affilié (Laissez vide si équipe amateure) :</label>
+                <input type="text" id="club" name="club" placeholder="Ex: SC Sélestat Volley">
+            </div>
+
+            <button type="submit" class="btn" style="margin-top: 1rem;">Confirmer l'inscription</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Thaïs Argillier - Master 2 STAPS MOS (Université de Bordeaux)</p>
+    </footer>
+</body>
+</html>
