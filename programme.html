@@ -7,12 +7,12 @@
 </head>
 <body>
     <header>
-        <h1>Programme sportif & gestion</h1>
-        <h2>Un weekend en deux phases</h2>
+        <h1>Calendrier sportif</h1>
+        <h2>Un weekend piloté de A à Z</h2>
         <nav>
             <ul>
                 <li><a href="index.html">Présentation</a></li>
-                <li><a href="description.html">L'évènement</a></li>
+                <li><a href="description.html">L'évéèement</a></li>
                 <li><a href="programme.html" class="active">Programme</a></li>
                 <li><a href="infos.html">Infos pratiques</a></li>
                 <li><a href="inscription.html">Inscriptions</a></li>
@@ -22,31 +22,55 @@
     </header>
 
     <main>
-        <h2 class="section-title">Déroulé du weekend (06-07 Juin)</h2>
+        <h2 class="section-title">Déroulé de l'évènement</h2>
+        <p class="intro-text">Cliquez sur chaque journée pour afficher le détail du programme sportif. Ce format a été pensé pour maximiser le temps de jeu et garantir l'équité des rencontres.</p>
         
-        <div class="grid-2">
-            <div class="card">
-                <h3>Format du tournoi</h3>
-                <p>Le weekend s'articule autour d'une formule dynamique garantissant du temps de jeu pour tous :</p>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li><strong>Phase 1 (Samedi) :</strong> Tournoi initial où toutes les équipes s'affrontent lors de phases de poules brassées.</li>
-                    <li><strong>Phase 2 (Dimanche) :</strong> Création d'un second tournoi divisé en 3 groupes de niveaux établis selon les résultats de la veille. Cela garantit des matchs équilibrés et amusants jusqu'à la fin.</li>
-                </ul>
-            </div>
-            
-            <div class="card">
-                <h3>Gestion de projet évènementiel</h3>
-                <p>La réussite de ce format a nécessité une organisation rigoureuse en 3 étapes :</p>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li><strong>En amont :</strong> Coordination des partenaires, suivi des inscriptions et logistique des dotations.</li>
-                    <li><strong>Le Jour J :</strong> Gestion du flux des participants, supervision du respect des plannings de matchs et création de contenus.</li>
-                    <li><strong>Post-Événement :</strong> Analyse des données via un questionnaire et évaluation de l'impact.</li>
-                </ul>
-            </div>
+        <div style="max-width: 800px; margin: 0 auto 3rem auto;">
+            <!-- Calendrier cliquable : Jour 1 -->
+            <details class="calendar-day">
+                <summary>📅 Samedi 06 Juin : accueil et brassage</summary>
+                <div class="calendar-content">
+                    <ul>
+                        <li><strong>08h30 - 09h30 :</strong> Accueil des délégations, vérification des licences et remise des "Welcome Packs".</li>
+                        <li><strong>09h30 - 10h00 :</strong> Briefing technique et grand échauffement collectif en musique.</li>
+                        <li><strong>10h00 - 12h30 :</strong> Phase 1 - Lancement des poules de brassage. Toutes les équipes s'affrontent par poule.</li>
+                        <li><strong>12h30 - 14h00 :</strong> Pause et restauration sur place.</li>
+                        <li><strong>14h00 - 18h00 :</strong> Suite et fin de la première phase de poules.</li>
+                        <li><strong>19h30 :</strong> Repas inter-équipes et soirée animée.</li>
+                    </ul>
+                </div>
+            </details>
+
+            <!-- Calendrier cliquable : Jour 2 -->
+            <details class="calendar-day">
+                <summary>🏆 Dimanche 07 Juin : finales</summary>
+                <div class="calendar-content">
+                    <ul>
+                        <li><strong>09h00 :</strong> Petit déjeuner et réveil musculaire.</li>
+                        <li><strong>09h30 - 13h00 :</strong> Phase 2 - création de 3 nouvelles poules basées sur les résultats de la veille pour garantir des matchs serrés et amusants.</li>
+                        <li><strong>13h00 - 14h00 :</strong> Pause déjeuner.</li>
+                        <li><strong>14h00 - 16h00 :</strong> Phases finales, matchs de classement et animations annexes.</li>
+                        <li><strong>16h30 :</strong> Cérémonie de clôture, remise des récompenses et discours des partenaires.</li>
+                    </ul>
+                </div>
+            </details>
+
+            <!-- Gestion de projet -->
+            <details class="calendar-day">
+                <summary>⚙️ Les coulisses : ma gestion de projet</summary>
+                <div class="calendar-content">
+                    <p>La réussite de ce format a nécessité une ingénierie rigoureuse en 3 étapes clés :</p>
+                    <ul style="margin-top: 10px;">
+                        <li><strong>En amont :</strong> Coordination inter-services (Fédération, Ligue Grand Est, Club), suivi budgétaire, gestion administrative des inscriptions et commande du matériel.</li>
+                        <li><strong>Le jour J :</strong> Supervision logistique, gestion de crise, animation du plateau sportif, et production de contenus médias (photos/vidéos) pour la communication de la FFVolley.</li>
+                        <li><strong>Post-Événement :</strong> Traitement des datas, analyse des questionnaires de satisfaction et rédaction du bilan de l'évènement.</li>
+                    </ul>
+                </div>
+            </details>
         </div>
 
         <div class="cta-container">
-            <a href="infos.html" class="btn">Consulter les informations pratiques</a>
+            <a href="infos.html" class="btn">Découvrir les infrastructures</a>
         </div>
     </main>
 

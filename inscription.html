@@ -7,8 +7,8 @@
 </head>
 <body>
     <header>
-        <h1>Rejoindre l'aventure</h1>
-        <h2>Formulaire d'inscription</h2>
+        <h1>Portail des inscriptions</h1>
+        <h2>Rejoignez le mouvement Soft Volley</h2>
         <nav>
             <ul>
                 <li><a href="index.html">Présentation</a></li>
@@ -22,49 +22,57 @@
     </header>
 
     <main>
-        <h2 class="section-title">Inscrire votre équipe</h2>
-        <p style="text-align: center; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-            Le Soft Volley prône l'inclusion et la convivialité. <strong>La constitution d'équipes mixtes et intergénérationnelles est fortement encouragée !</strong>
+        <h2 class="section-title">Validez la participation de votre équipe</h2>
+        <p class="intro-text">
+            Le Challenge est pensé pour être accessible à toutes et tous. Afin de conserver l'esprit convivial et novateur du Soft Volley, <strong>la Fédération encourage vivement la constitution d'équipes mixtes et intergénérationnelles.</strong><br><br>
+            Attention : clôture des inscriptions le 25 Mai 2026. La gestion administrative et la commande des dotations sont traitées directement par la Ligue Régionale et le siège fédéral.
         </p>
         
         <form class="card" action="#" method="POST">
             <div class="form-group">
-                <label for="nom_equipe">Nom de l'équipe :</label>
-                <input type="text" id="nom_equipe" name="nom_equipe" placeholder="Ex: Les As de Sélestat" required>
+                <label for="nom_equipe">Nom de la Team (Soyez originaux !) :</label>
+                <input type="text" id="nom_equipe" name="nom_equipe" placeholder="Ex: Les Aces d'Alsace" required>
             </div>
 
             <div class="form-group">
-                <label for="email_contact">Email du contact principal :</label>
-                <input type="email" id="email_contact" name="email_contact" placeholder="votre.email@exemple.com" required>
+                <label for="email_contact">Email du Capitaine / Référent :</label>
+                <input type="email" id="email_contact" name="email_contact" placeholder="contact@email.com" required>
             </div>
 
             <div class="grid-2" style="margin-bottom: 0;">
                 <div class="form-group">
-                    <label for="nb_joueurs">Effectif total (joueurs & joueuses) :</label>
-                    <input type="number" id="nb_joueurs" name="nb_joueurs" min="4" max="10" required>
+                    <label for="nb_joueurs">Effectif (Nombre de joueurs.ses) :</label>
+                    <input type="number" id="nb_joueurs" name="nb_joueurs" min="4" max="10" placeholder="Minimum 4" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="composition">Composition de l'équipe :</label>
+                    <label for="composition">Profil de l'équipe :</label>
                     <select id="composition" name="composition">
-                        <option value="mixte">Mixte & intergénérationnelle (recommandé)</option>
-                        <option value="feminine">100% Féminine</option>
-                        <option value="masculine">100% Masculine</option>
+                        <option value="mixte">Mixte & Intergénérationnelle (Recommandé)</option>
+                        <option value="feminine">Section 100% Féminine</option>
+                        <option value="masculine">Section 100% Masculine</option>
+                        <option value="sport-sante">Section Sport-Santé / APAS</option>
                     </select>
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="club">Club affilié (Laissez vide si équipe amateure) :</label>
-                <input type="text" id="club" name="club" placeholder="Ex: SC Sélestat Volley">
+                <label for="repas">Réservation des repas du midi (Nombre) :</label>
+                <input type="number" id="repas" name="repas" min="0" max="10" value="0">
             </div>
 
-            <button type="submit" class="btn" style="margin-top: 1rem;">Confirmer l'inscription</button>
+            <div class="form-group">
+                <label for="club">Affiliation (Si applicable) :</label>
+                <input type="text" id="club" name="club" placeholder="Nom de votre club, entreprise ou association">
+            </div>
+
+            <button type="submit" class="btn" style="margin-top: 1rem;">Envoyer la demande d'inscription</button>
         </form>
     </main>
 
     <footer>
         <p>&copy; 2026 - Thaïs Argillier - Master 2 STAPS MOS (Université de Nanterre)</p>
+</p>
     </footer>
 </body>
 </html>
